@@ -1,0 +1,37 @@
+var t1=gsap.timeline();
+gsap.set(".a",{ 
+    y:10,
+    opacity:0
+})
+gsap.set("#shoe",{
+    opacity:0,
+    scale:0.5,
+    y:10
+})
+t1.from("#left",{
+    width:0,
+    duration:2,
+    ease:Expo.easeInOut
+})
+t1.from("#right",{
+    delay:-1,
+    width:0,
+    duration:2,
+    ease:Expo.easeInOut
+})
+t1.to(".a",{
+    y:0,
+    stagger:.2,
+    delay:-2,
+    opacity:1,
+    duration:2,
+    ease:Expo.easeInOut
+})
+t1.to("#shoe",{
+    opacity:1,
+    scale:1,
+    delay:-2.3,
+    duration:2,
+    ease:Expo.easeInOut,
+    y:0
+})
