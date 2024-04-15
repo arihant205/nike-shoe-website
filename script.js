@@ -6,7 +6,6 @@ gsap.set(".a",{
 gsap.set("#shoe",{
     opacity:0,
     scale:0.5,
-    y:10
 })
 t1.from("#left",{
     width:0,
@@ -33,5 +32,4 @@ t1.to("#shoe",{
     delay:-2.3,
     duration:2,
     ease:Expo.easeInOut,
-    y:0
 })
